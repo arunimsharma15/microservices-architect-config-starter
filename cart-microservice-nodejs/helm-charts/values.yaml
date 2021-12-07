@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image:
+  repository: deekshithsn/cart
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 1004
+  name: cart-ui
+  targetPort: 1004

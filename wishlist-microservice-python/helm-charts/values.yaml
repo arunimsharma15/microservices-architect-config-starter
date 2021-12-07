@@ -1,0 +1,11 @@
+replicaCount: 1
+
+image:
+  repository: deekshithsn/wishlist
+  pullPolicy: IfNotPresent
+  
+service:
+  type: ClusterIP
+  port: 1003
+  name: wishlist-ui
+  targetPort: 5000
